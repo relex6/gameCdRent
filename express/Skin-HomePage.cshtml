@@ -1,0 +1,317 @@
+﻿@{
+ViewBag.ShowAside = 2;//显示返回顶部按钮
+}
+@{Layout = "/Areas/Mobile/Templates/Default/Views/Shared/_Base.cshtml";}
+<div class="container">
+<script src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+@{Html.RenderPartial("~/Areas/Mobile/Templates/Default/Views/Shared/_SearchBox.cshtml");}
+<script src="~/Areas/Mobile/Templates/Default/Scripts/WeiXinShare.js"></script>
+<link rel="stylesheet" href="/Content/PublicMob/css/style.css" />
+<!-- <link rel="stylesheet" href="/Areas/Admin/templates/common/style/css.css" rev="stylesheet" type="text/css"> -->
+<!-- <link rel="stylesheet" href="/Areas/Admin/templates/common/style/mycss.css" rev="stylesheet" type="text/css"> -->
+<!-- <link rel="stylesheet" href="/Areas/Admin/templates/common/style/main.css" rev="stylesheet" type="text/css"> -->
+<!-- <link rel="stylesheet" href="/Areas/Admin/templates/common/style/head.css"> -->
+    <script src="/Areas/Mobile/Templates/Default/Scripts/adaptive.js?v=20191028"></script>
+
+    <link rel="stylesheet" href="/Areas/Admin/templates/common/style/index.css?v=20191028" rev="stylesheet" type="text/css">
+<link rel="stylesheet" href="/Areas/Admin/templates/common/style/swipeslider.css?v=1.1" rev="stylesheet" type="text/css">
+ <!--轮播图 -->
+        <div class="banner-content">
+          <figure id="responsiveness" class="swipslider">
+            <ul class="sw-slides">
+              <!-- <li class="sw-slide">
+              <a href="http://zoshop.zjqingda.com/m-wap/topic/detail/65">
+                <img 
+                  src="http://zoshop.zjqingda.com/Storage/tupian/shouye/1lunbo1.png"
+                  alt="图1"
+                />   
+              </a>          
+              </li> -->
+              <li class="sw-slide">
+              <a href="http://www.hdb-cdn4.cn/party/194ca.html?hdb_from=AContacts">
+                <img
+                  src="http://zoshop.zjqingda.com/Storage/tupian/shouye/1lunbo2.png"
+                  alt="图2"
+                />
+                </a> 
+              </li>
+              <li class="sw-slide">
+                <img
+                  src="http://zoshop.zjqingda.com/Storage/tupian/shouye/1lunbo3.png"
+                  alt="图2"
+                />
+              </li>
+            </ul>
+          </figure>
+        </div>
+     <!-- 菜单栏 -->
+     <div class="menu-content">
+        <ul class="menu-list ">
+          <li>
+            <div class="menu">
+              <a href="http://zoshop.zjqingda.com/m-wap/vshop/detail/21">
+                <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/2shouji.png">
+              </a>
+            </div>
+            <span>手机</span>
+          </li>
+          <li>
+            <div class="menu">
+             <a href="http://zoshop.zjqingda.com/m-wap/vshop/detail/19">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/2shengxian.png" />
+            </a>
+            </div>
+            <span>黄鱼</span>
+          </li>
+          <li>
+            <div class="menu">
+             <a href="http://zoshop.zjqingda.com/m-wap/topic/detail/67">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/2zhaoshang.png" />
+             </a>
+            </div>
+            <span>招商</span>
+          </li>
+          <li>
+            <div class="menu">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/2fanchang.png" />
+            </div>
+            <span>房产</span>
+          </li>
+          <li>
+            <div class="menu">
+             <a href="http://zoshop.zjqingda.com/m-wap/Vshop">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/2redian.png" />
+            </a>
+            </div>
+            <span>热点</span>
+          </li>
+        </ul>
+      </div>
+      <!--商品内容-->
+      <div class="goods-content">
+        <div class="cut-line">
+          <img src="/Areas/Mobile/Templates/Default/Images/hot_icon.png" />
+          <span>平价专区</span>
+        </div>
+        <div class="goods-list-new">
+          <ul>
+            <li>
+              <div class="goods-img-new">
+              <a href="http://zoshop.zjqingda.com/product/detail/2260">
+                <img
+                  src="http://zoshop.zjqingda.com/Storage/tupian/shouye/3tjhyz1.png"
+                />
+                </a>
+              </div>
+              <div class="goods-describe">
+                <span>变频中央空调</span>
+                <span>本周新品热销</span>
+              </div>
+            </li>
+            <li>
+              <div class="goods-img-new">
+              <a href="http://zoshop.zjqingda.com/product/detail/1962">
+                <img
+                  src="http://zoshop.zjqingda.com/Storage/tupian/shouye/3tjhyz2.png"
+                />
+                </a>
+              </div>
+              <div class="goods-describe">
+                <span>扫地机器人</span>
+                <span>本周人气商品</span>
+              </div>
+            </li>
+            <li>
+              <div class="goods-img-new">
+              <a href="http://zoshop.zjqingda.com/product/detail/2267">
+                <img
+                  src="http://zoshop.zjqingda.com/Storage/tupian/shouye/3tjhyz3.png"
+                />
+                </a>
+              </div>
+              <div class="goods-describe">
+                <span>科技新风系统</span>
+                <span>本周新品热销</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="cut-line-bj">
+          <div class="cut-activity">
+            <span></span>
+            <span>精选活动</span>
+            <span></span>
+          </div>
+        </div>
+        <!-- 精选活动 -->
+        <div class="goods-activity-list">
+          <div class="goods-activity">
+            <div class="goods-title">
+              <span>马上抢券</span>
+              <span>5折优惠领不停！</span>
+            </div>
+            <div class="goods-activity-img">
+            <a href="http://zoshop.zjqingda.com/m-wap/topic/detail/65">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/4bkjd.png" />
+              </a>
+            </div>
+          </div>
+          <div class="goods-activity">
+            <div class="goods-title">
+              <span>火爆拼团</span>
+              <span>出厂价拿到手软！</span>
+            </div>
+            <div class="goods-activity-img">
+            <a href="http://zoshop.zjqingda.com/m-Wap/FightGroup/">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/4zywj.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 热卖专区 -->
+        <div class="cut-line-bj">
+          <div class="cut-buy">
+            <span></span>
+            <span>热卖专区</span>
+            <span></span>
+          </div>
+        </div>
+        <div class="goods-buy-list">
+          <ul>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/2350">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/5xsqg01.png" />
+              </a>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/2352">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/5xsqg02.png" />
+              </a>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/2351">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/5xsqg03.png" />
+              </a>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/2353">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/5xsqg04.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 热销家电榜 -->
+        <div class="goods-hot">
+          <div class="hot-list">
+            <div class="hot-lable">
+              <div class="hot-content">
+                <span class="hot-title">热销家电榜</span>
+                <img src="/Areas/Mobile/Templates/Default/Images/start.png" />
+                <span class="hot-sub-title">最近30天</span>
+                <span class="hot-sub-title">月销排行版</span>
+              </div>
+            </div>
+            <div class="goods-ranking">
+            <a href="http://zoshop.zjqingda.com/product/detail/2218">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/6rxjdz1.png" />
+              </a>
+            </div>
+            <div class="goods-ranking">
+            <a href="http://zoshop.zjqingda.com/product/detail/2228">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/6rxjdz2.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="cut-line-bj cut-like">
+          <span></span>
+          <span>好物推荐</span>
+          <span></span>
+        </div>
+        <div class="goods-like">
+          <ul>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/1978">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/7cnxhzs1.png" />
+              </a>
+              <div class="goods-describe">
+                <span>好物</span>
+                <div>
+                  德普（Depelec）ZK55德普蒸烤一体机嵌入式蒸烤箱一体机家用二合一电蒸箱 
+                </div>
+              </div>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/1963">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/7cnxhzs2.png" />
+              </a>
+              <div class="goods-describe">
+                <span>好物</span>
+                <div>
+                  美的无叶静音家用台立式风扇
+                </div>
+              </div>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/1949">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/7cnxhzs3.png" />
+              </a>
+              <div class="goods-describe">
+                <span>好物</span>
+                <div>
+                  美菱十字四门家用无霜变频冰箱
+                </div>
+              </div>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/1934">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/7cnxhzx1.png" />
+              </a>
+              <div class="goods-describe">
+                <span>好物</span>
+                <div>
+                  三菱电机大1.5匹变频挂机家用
+                </div>
+              </div>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/1922">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/7cnxhzx2.png" />
+              </a>
+              <div class="goods-describe">
+                <span>好物</span>
+                <div>
+                  白雪大容量商用卧式冰柜展示柜
+                </div>
+              </div>
+            </li>
+            <li>
+            <a href="http://zoshop.zjqingda.com/product/detail/1861">
+              <img src="http://zoshop.zjqingda.com/Storage/tupian/shouye/7cnxhzx3.png" />
+              </a>
+              <div class="goods-describe">
+                <span>好物</span>
+                <div>
+                  海尔全自动12公斤变频家用滚筒洗脱一体机
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> 
+        <!-- @{Html.RenderAction("GoodsListAction", "TemplateVisualizationProcess",new { Layout="4", ShowName="1", IDs="2222,1962,1953,1939", ShowIco="True", ShowPrice="True", DataUrl="/api/Hi_Ajax_GoodsList", ID="goods_49a8ed5b46a84461aae10f148b2cd4da"});}@{Html.RenderPartial("~/Areas/Mobile/Templates/Default/Views/Shared/_4ButtonsFoot.cshtml");}
+<!-- <script src="~/Areas/Mobile/Templates/Default/Scripts/mui.min.js"></script> -->
+<!-- <script src="~/Areas/Mobile/Templates/Default/Scripts/AppAuto.js"></script> -->
+<!-- <script src="~/Areas/Mobile/Templates/Default/Scripts/home.js"></script> -->
+ <!-- <script src="~/Scripts/swipe-template.js"></script> -->
+<!-- <script src="~/Areas/Mobile/Templates/Default/Scripts/IndexShare.js"></script> -->
+<script src="~/Areas/Mobile/Templates/Default/Scripts/swipeslider.min.js"></script>
+ <script type="text/javascript">
+      $(window).load(function() {
+        $('#responsiveness').swipeslider({
+          autoPlayTimeout: 5000,
+          prevNextButtons: false
+        })
+      })
+    </script>
